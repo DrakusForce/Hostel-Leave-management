@@ -1,0 +1,36 @@
+<script>
+  $(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+<div class="container">
+  <div
+    class="row"
+    style="   margin-left: -36px;
+    margin-top: 10px;
+    display: flex;
+    position: absolute;"
+  >
+    <div class="col-sm-3" style="list-style-type: none;">
+      <li>
+        <a
+          href="/hod/home"
+          data-toggle="tooltip"
+          title="home page"
+          data-placement="left"
+          class="btn btn-info btn-lg"
+          style="width: 210px;margin-top: 10px;"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="/hod/<%=hod._id%>/leave"
+          class="btn btn-info btn-lg"
+          style="width: 210px;margin-top: 10px;"
+          >Application</a
+        >
+      </li>
+    </div>
+  </div>
+</div>
